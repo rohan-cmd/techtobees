@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-tuple.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    } 
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Tuples</h1>
+                <p>A tuple is an immutable list of values. Tuples are one of Python's simplest and most common
+                    collection types, and can be created with the comma operator (value = 1, 2, 3).</p>
+                <p>Access Tuple Items <br> You can access tuple items by referring to the index number, inside
+                    square brackets:</p>
+                <span>Example :</span>
+                <div class="scroll" id="scroll1">
+                    #Print the second item in the tuple <br>
+                    thistuple = ("apple", "banana", "cherry") <br>
+                    print(thistuple[1])<br>
+                </div>
+                <span>Output :</span>
+                <div class="scroll" id="scroll1-o">
+                    banana
+                </div>
+                <h2>Change Tuple Values</h2>
+                <p>Once a tuple is created, you cannot change its values. Tuples are <span>unchangeable,</span> or
+                    <span>immutable</span> as it also is called.</p>
+                <p>But there is a workaround. You can convert the tuple into a list, change the list, and convert the
+                    list back into a tuple.</p>
+                <span>Example :</span>
+                <div class="scroll" id="scroll2">
+                    #Convert the tuple into a list to be able to change it: <br>
+                    x = ("apple", "banana", "cherry") <br>
+                    y = list(x) <br>
+                    y[1] = "kiwi" <br>
+                    x = tuple(y) <br>
+                    print(x)
+                </div>
+                <span>Output :</span>
+                <div class="scroll" id="scroll2-o">
+                    ('apple', 'kiwi', 'cherry')
+                </div>
+                <h2>Loop Through a Tuple</h2>
+                <p>You can loop through the tuple items by using a for loop.</p>
+                <span>Example :</span>
+                <div class="scroll" id="scroll3">
+                    #Iterate through the items and print the values <br>
+                    thistuple=("apple","banana","cherry")<br>
+                    for x in thistuple:<br>
+                    print(x)<br>
+                </div>
+                <span>Output :</span>
+                <div class="scroll" id="scroll3-o">
+                    apple <br>
+                    banana <br>
+                    cherry
+                </div>
+                <h2>Tuple Length</h2>
+                <p>To determine how many items a tuple has, use the len() method:</p>
+                <span>Example :</span>
+                <div class="scroll" id="scroll4">
+                    #Print the number of items in the tuple <br>
+                    thistuple = ("apple", "banana", "cherry") <br>
+                    print(len(thistuple))
+                </div>
+                <span>Output :</span>
+                <div class="scroll" id="scroll4-o">
+                    3
+                </div>
+                <h2>Remove Items</h2>
+                <p id="note"><span>Note: .</span>You cannot remove items in a tuple</p>
+                <p id="last">Tuples are <span>unchangeable,</span>  so you cannot remove items from it, but you can delete the tuple completely.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-forloop.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li> 
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python For Loops</h1>
+                <p>
+                    for loops iterate over a collection of items, such as list or dict, and run a block of code with
+                    each element from the collection.
+                </p>
+                <div class="scroll" id="scroll1">
+                    for i in [0, 1, 2, 3, 4]: <br>
+                    &nbsp;&nbsp;&nbsp;print(i)
+                </div>
+                <p>The above for loop iterates over a list of numbers.</p>
+                <p>Each iteration sets the value of i to the next element of the list. So ﬁrst it will be 0, then 1,
+                    then 2, etc. The output will be as follow:</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll1-o">
+                    0 <br>
+                    1<br>
+                    2<br>
+                    3<br>
+                    4
+                </div>
+                <p>range is a function that returns a series of numbers under an iterable form, thus it can be used in
+                    for loops:</p>
+                <div class="scroll" id="scroll2">
+                    for i in range(5): <br>
+                    &nbsp;&nbsp;&nbsp; print(i)
+                </div>
+                <p>gives the exact same result as the ﬁrst for loop. Note that 5 is not printed as the range here is the
+                    ﬁrst ﬁve numbers counting from 0.</p>
+                <h2>Iterable objects and iterators</h2>
+                <p>for loop can iterate on any iterable object which is an object which deﬁnes a
+                    <span>__getitem__</span> or a <span>__iter__</span> function. The <span>__iter__</span> function
+                    returns an iterator, which is an object with a next function that is used to access the next element
+                    of the iterable.</p>
+                <h2>Iterating over lists</h2>
+                <p>To iterate through a list you can use for:</p>
+                <div class="scroll" id="scroll3">
+                    for x in ['one', 'two', 'three', 'four']: <br>
+                    print(x)
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll3-o">
+                    one <br>
+                    two <br>
+                    three <br>
+                    four <br>
+                </div>
+                <h2>Loops with an "else" clause</h2>
+                <p>The for and while compound statements (loops) can optionally have an else clause (in practice, this
+                    usage is fairly rare).</p>
+                <div class="scroll" id="scroll4">
+                    for i in range(3): <br>
+                    &nbsp;&nbsp;&nbsp;print(i) <br>
+                    else: <br>
+                    &nbsp;&nbsp;&nbsp;print('done')br
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll4-o">
+                    0 <br>
+                    1<br>
+                    2<br>
+                    done
+                </div>
+                <p>The else clause only executes after a for loop terminates by iterating to completion, or after a while loop terminates by its conditional expression becoming false.</p>
+                <div class="scroll" id="scroll5">
+                    i = 0 <br>
+                    while i &lt; 3: <br>
+                    &nbsp;&nbsp;&nbsp;print(i) <br>
+                    &nbsp;&nbsp;&nbsp;i += 1 <br>
+                    else: <br>
+                    &nbsp;&nbsp;&nbsp;print('done')
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll5-o">
+                    0 <br>
+                    1<br>
+                    2<br>
+                    done
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

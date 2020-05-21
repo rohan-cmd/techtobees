@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-sets.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script> 
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+            <div>
+                <h1>Python Sets</h1>
+                <p>A Python set is an unordered collection of comma separated elements inside curly braces '{ }'. Python set itself is mutable allowing addition and removal of items but the elements are immutable which forbids any change in existing items.</p>
+                <p>Unlike <a href="p-tuple.html">tuples</a> or <a href="p-lists.html">lists</a>, Python sets don’t allow multiple occurrences of the same element. Hence, each element in Python set is unique.</p>
+                <span>There are two types of built-in set types:</span>
+                <ul><li> <span>set:</span>  Python set type is mutable</li>
+                <li><span>frozen set:</span> Python frozen set type is immutable</li></ul>
+                <h2>How to create python sets :</h2>
+                <p>Creating set in Python is as easy as placing unique comma separated items in curly braces '{ }' or it can also be created by using built-in function set( ).</p>
+                <p>There are two methods add( ) and update() for adding new items to the Python set.</p>
+            </div>
+            <ul><li> <span>set( ):</span> to add single item</li>
+                <li><span>update( ): </span>to add multiple items</li></ul>
+                <p>Duplicate items are automatically avoided while adding new items.</p>
+                <h2>How to remove items from a python set ?</h2>
+                <p><span>pop( ) : </span>Like in lists and tuples, pop( ) is used to remove an item from a Python set. In lists or tuples or dictionary we can remove the desired item specifying in the slicing and indexing operator.</p>
+                <p><span>remove( ) : </span>Using remove( ) function, we can remove any existing item in the Python set by designating and supplying the item as the function argument. It will throw and error if the item doesn’t exist in the set.</p>
+                <p><span>discard( ): </span>is another function used to remove an item from the set. It operates same as </p>
+                <p><span>remove( ) :</span>but doesn’t throw an error if the item doesn’t exist in the set.                                                                          </p>
+                <p><span>Clear() : </span>In Python set, clear( ) is used to remove all the items from the set.</p>
+                <h2>How to copy a set in Python?</h2>
+                <p>To copy a Python set or its items, Python provides built-in function copy( ). It creates a shallow copy and returns it.</p>
+                <h2>What is a Python frozen set?</h2>
+                <p>Frozen set is similar to set except in mutability. Python set is mutable itself, however, the elements in the set are immutable. In the frozen set, along with elements frozen set itself is immutable. Hence, We cannot add or remove items from frozen sets.</p>
+                <p>Frozen sets can be used as keys in the dictionary as they are immutable and hashable.</p>
+                <p id="last">Frozen sets are created using built-in function frozenset( ).</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

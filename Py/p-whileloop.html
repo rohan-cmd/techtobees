@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-whileloop.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li> 
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python While Loops</h1>
+                <p>A while loop will cause the loop statements to be executed until the loop condition is falsey. The
+                    following code will execute the loop statements a total of 4 times.</p>
+                <div class="scroll" id="scroll1">
+                    i=0 <br>
+                    while i&lt;4: <br>
+                    &nbsp;&nbsp;&nbsp;print(i) <br>
+                    &nbsp;&nbsp;&nbsp;i=i+1
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll1-o">
+                    0 <br>
+                    1 <br>
+                    2 <br>
+                    3 <br>
+                    4
+                </div>
+                <p>While the above loop can easily be translated into a more elegant for loop, while loops are useful
+                    for checking if some condition has been met. The following loop will continue to execute until
+                    myObject is ready.</p>
+                <div class="scroll" id="scroll2">
+                    myObject = anObject() <br>
+                    while myObject.isNotReady(): <br>
+                    &nbsp;&nbsp;&nbsp;myObject.tryToGetReady()
+                </div>
+                <p>while loops can also run without a condition by using numbers (complex or real) or True:</p>
+                <div class="scroll" id="scroll3">
+                    import cmath <br>
+                    complex_num = cmath.sqrt(-1) <br>
+                    while complex_num: # You can also replace complex_num with any number, True or a value of any type
+                    <br>
+                    &nbsp;&nbsp;&nbsp; print(complex_num) # Prints 1j forever
+                </div>
+                <p>If the condition is always true the while loop will run forever (inﬁnite loop) if it is not
+                    terminated by a break or return statement or an exception.</p>
+                <div class="scroll" id="scroll4">
+                    while True: <br>
+                    &nbsp;&nbsp;&nbsp;print "Infinite loop" <br><br>
+                    <span>Output : </span> <br>
+                    # Infinite loop <br> # Infinite loop <br> # Infinite loop <br> # ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

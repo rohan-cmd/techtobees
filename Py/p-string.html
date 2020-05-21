@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-string.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() { 
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Strings</h1>
+                <p>A string is a sequence of characters. You can access the characters one at a time with the bracket
+                    operator:</p>
+                <div class="scroll" id="scroll1">
+                    &gt;&gt;&gt;language = 'Python' <br> &gt;&gt;&gt;letter = lanuage[1]
+                </div>
+
+                <p>The second statement extracts the character at index position 1 from the language variable and
+                    the expression in brackets is called an index. The index indicates which character in the sequence
+                    you want (hence the name).</p>
+                <img src="p-string1.png" alt="" id="iii">
+                <h2>Getting the length of a string using len</h2>
+                <p>len is a built-in function that returns the number of characters in a string:</p>
+                <div class="scroll" id="scroll2">
+                    &gt;&gt;&gt;language = 'Python' <br> &gt;&gt;&gt;len(language)
+                </div>
+                <span>Output: <br> 6</span>
+                <h2>Traversal through a string with a loop</h2>
+                <p>A lot of computations involve processing a string one character at a time. Often they start at the
+                    beginning, select each character in turn, do something to it, and continue until the end. This
+                    pattern of processing is called a traversal. One way to write a traversal is with a while loop:</p>
+                <div class="scroll" id="scroll3">
+                    index = 0 <br>
+                    while index &lt; len(language): <br>
+                    letter = language[index] <br>
+                    print(letter) <br>
+                    index = index + 1 <br>
+                </div>
+                <h2>String slices</h2>
+                <p>A segment of a string is called a slice. Selecting a slice is similar to selecting a character:</p>
+                <div class="scroll" id="scroll4">
+                    >>> s = 'Monty Python' <br> >>> print(s[0:5]) <br> <br> <span>Monty</span> <br><br> >>>
+                    print(s[6:12]) <br><br>
+                    <span>Python</span>
+                </div>
+                <h2>Strings are immutable</h2>
+                <p>It is tempting to use the operator on the left side of an assignment, with the intention of changing
+                    a character in a string. For example:</p>
+                <div class="scroll" id="scroll5">
+                    &gt;&gt;&gt; greeting = 'Hello, world!' <br>
+                    &gt;&gt;&gt; greeting[0] = 'J'
+                </div>
+                <span>Output :</span>
+                <div class="scroll" id="scroll5-o">TypeError: 'str' object does not support item assignment</div>
+                <p>The “object” in this case is the string and the “item” is the character you tried to assign. For now,
+                    an object is the same thing as a value, but we will reﬁne that deﬁnition later. An item is one of
+                    the values in a sequence.</p>
+                <p>The reason for the error is that strings are immutable, which means you can’t change an existing
+                    string. The best you can do is create a new string that is a variation on the original:</p>
+                <div class="scroll" id="scroll6">
+                    &gt; &gt; &gt;greeting = 'Hello, world!' <br> &gt; &gt; &gt; new_greeting = 'J' + greeting[1:] <br>
+                    &gt; &gt; &gt; print(new_greeting)
+                </div>
+                <span>Output :</span>
+                <div class="scroll" id="scroll6-o">Jello, world! </div>
+                <p>This example concatenates a new ﬁrst letter onto a slice of greeting. It has no eﬀect on the original
+                    string.
+                </p>
+                <h2>Looping and counting</h2>
+                <p>The following program counts the number of times the letter “a” appears in a string:
+                </p>
+                <div class="scroll" id="scroll7">
+                    word = 'Python' <br>
+                    count = 0 <br>
+                    for letter in word: <br>
+                    if letter == 't': <br>
+                    count = count+1 <br>
+                    print(count)<br>
+                </div>
+                <p>This program demonstrates another pattern of computation called a counter. The variable count is
+                    initialized to 0 and then incremented each time an “a” is found. When the loop exits, count contains
+                    the result: the total number of a’s.</p>
+                <h2>The in operator</h2>
+                <p>The word in is a boolean operator that takes two strings and returns True if the ﬁrst appears as a
+                    substring in the second:</p>
+                <div class="scroll" id="scroll8">
+                    &gt; &gt; &gt; 't' in 'Python' <br> True <br> &gt; &gt; &gt; 'seed' in 'banana' <br> False<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

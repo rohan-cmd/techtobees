@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-install.css">
+    <link rel="icon" type="image" href="techtobees.jpg"> 
+</head>
+
+<script>
+function showMenu(){
+document.getElementById('v-menu').style.display = "block";
+}
+function closeMenu(){
+document.getElementById('v-menu').style.display = "none";
+}
+  
+</script>  
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div> 
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li> 
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+           <div id="ad1" class="ads">
+                
+           </div>
+        </div>
+        <div id="b2">
+           <div id="p1">
+            <h1>There are two types of ways to run Python on your device.</h1>
+            <h2>1) Run Python using Thonny IDE.</h2>
+            <p>The Thonny IDE comes with the latest version of Python bundled in it. So you don't have to install Python separately.</p>
+            <ol>
+                <li>Download <a href="https://thonny.org/">Thonny IDE</a> </li>
+                <li>Run the installer to install <span>Thonny IDE</span> on your computer.</li>
+                <li>Go to: <span>File &gt;New</span>. Then save the file with <span>.py</span> extension. For example <span>hello.py.</span></li>
+                <li>Write Python code in the file and save it using <span>.py</span> extension.  <br><span>Hello World</span> program in Thonny IDE.<br><img src="install1.jpg" alt="" id="iii">
+                </li>
+                <li>Then Go to <span>Run > Run current script</span> or simply click F5 to run it.</li>
+            </ol>
+            <h2>2) Install Python separately.</h2>
+            <ol>
+                <li>To download and install Python visit the official website of Python <a href="https://www.python.org/downloads/" id="aaa">https://www.python.org/downloads/</a>.<img src="p_i4.png" alt=""></li>
+                <li>Once the download is complete, run the exe for install Python. Now click on Install Now. <img src="p_i3.png" alt=""></li>
+                <li>You can see Python installing at this point. <img src="p_i2.png" alt=""></li>
+                <li>) When it finishes, you can see a screen that says the Setup was successful. Now click on "Close". <img src="p_i1.png" alt=""></li>
+            </ol>
+           </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+<div id="v-menu">
+    <ul>
+        <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+        <li> <a href="home.html">Home</a> </li>
+        <li> <a href="tutorials.html">Tutorials</a> </li>
+        <li> <a href="contact.html">Contact us</a> </li>
+    </ul>
+</div>
+
+<!-- <div id="bars">
+    <img src="bars.png" alt="" onclick="showMenu()" id="o">
+</div> -->
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-if-Else.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li> 
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+            <h1>Python If....else</h1>
+            <p>An if-else statement executes one set of statements when the condition is true and a different set of
+                statements when the condition is false. In this way, an if-else statement allows us to follow two
+                courses of action. The syntax of if-else statement is as follows:</p>
+            <span>Syntax :</span>
+            <div class="scroll" id="scroll1">
+                if condition: <br>
+                # if block<br>
+                statement 1<br>
+                statement 2<br>
+                and so on<br><br>
+                else:<br>
+                # else block<br>
+                statement 3<br>
+                statement 4<br>
+                and so on:<br>
+            </div>
+            <p><span>Example : </span>Program to calculate the area and circumference of the circle</p>
+            <div class="scroll" id="scroll2">
+                radius = int(input("Enter radius: ")) <br><br>
+
+                if radius >= 0:<br>
+                &nbsp;&nbsp; print("Circumference = ", 2 * 3.14 * radius)<br>
+                &nbsp;&nbsp; print("Area = ", 3.14 * radius ** 2 )<br>
+                else:<br>
+                &nbsp;&nbsp; print("Please enter a positive number")
+            </div>
+            <span>Output :</span>
+            <div class="scroll" id="scroll2-o">
+                Enter radius: 5 <br>
+                Circumference = 31.400000000000002 <br>
+                Area = 78.5
+            </div>
+            <p>Now our program shows a proper response to the user even if the condition is false which is what is
+                wanted.</p>
+            <h1>Nested if and if-else statement</h1>
+            <p>We can also write if or if-else statement inside another if or if-else statement. This can be better
+                explained through some examples: </p>
+            <span>if statement inside another if statement.</span>
+            <p><span>Example : </span>A program to check whether a student is eligible for the loan or not</p>
+            <div class="scroll" id="scroll3">
+                gre_score = int(input("Enter your GRE score: ")) <br>
+                per_grad = int(input("Enter percent secured in graduation: "))<br><br>
+
+                if per_grad > 70:<br>
+                &nbsp;&nbsp;&nbsp;# outer if block<br>
+                &nbsp;&nbsp;&nbsp;if gre_score > 150:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# inner if block<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Congratulations you are eligible for loan")<br>
+                else:<br>
+                &nbsp;&nbsp;print("Sorry, you are not eligible for loan")
+            </div>
+            <span>First Output :</span>
+            <div class="scroll" id="scroll3-o1">
+                Enter your GRE score: 200 <br>
+                Enter percent secured in graduation: 77 <br>
+                Congratulations you are eligible for loan
+            </div>
+            <span>Second Output :</span>
+            <div class="scroll" id="scroll3-o2">
+                Enter your GRE score: 160 <br>
+                Enter percent secured in graduation: 60 <br>
+                Sorry, you are not eligible for loan
+            </div>
+            <p>This program has one small problem. Run the program again and enter gre_score less than 150 and per_grad greater than 70 like this:</p>
+            <span>Third Output :</span>
+            <div class="scroll" id="scroll3-o3">
+                Enter your GRE score: 100 <br>
+                Enter percent secured in graduation: 75
+            </div>
+            <p id="last"> As you can see the program doesn’t output anything. This is because our nested if statement doesn’t have an else clause.</p>
+        </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

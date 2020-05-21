@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-function.css">
+    <link rel="icon" type="image" href="techtobees.jpg"> 
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Functions</h1>
+                <p>Functions in Python provide organized, reusable and modular code to perform a set of speciﬁc actions.
+                    Functions simplify the coding process, prevent redundant logic, and make the code easier to follow.
+                    This topic describes the declaration and utilization of functions in Python.</p>
+                <p>Python has many built-in functions like print(), input(), len(). Besides built-ins you can also
+                    create your own functions to do more speciﬁc jobs—these are called user-deﬁned functions.</p>
+                <h2>Deﬁning and calling simple functions</h2>
+                <p>Using the def statement is the most common way to deﬁne a function in python. This statement is a so
+                    called single clause compound statement with the following syntax:</p>
+                <div class="scroll" id="scroll1">
+                    def function_name(parameters): <br>
+                    &nbsp;&nbsp;&nbsp;statement(s)
+                </div>
+                <p><span>function_name </span>is known as the identiﬁer of the function. Since a function deﬁnition is
+                    an executable statement its execution binds the function name to the function object which can be
+                    called later on using the identiﬁer.</p>
+                <p><span>parameters</span>is an optional list of identiﬁers that get bound to the values supplied as
+                    arguments when the function is called. A function may have an arbitrary number of arguments which
+                    are separated by commas.</p>
+                <p><span>statement(s) – </span>also known as the function body – are a nonempty sequence of statements
+                    executed each time the function is called. This means a function body cannot be empty, just like any
+                    indented block.</p>
+                <h2>Argument passing and mutability</h2>
+                <span>First, some terminology:</span>
+                <p><span>argument (actual parameter): </span>the actual variable being passed to a function.</p>
+                <p><span>parameter (formal parameter): </span>the receiving variable that is used in a function.</p>
+                <p><span>In Python, arguments are passed by </span>assignment (as opposed to other languages, where
+                    arguments can be passed by value/reference/pointer).</p>
+                <p>• Mutating a parameter will mutate the argument (if the argument's type is mutable).</p>
+                <div class="scroll" id="scroll2">
+                    def foo(x): # here x is the parameter <br>
+                    &nbsp;&nbsp;&nbsp;x[0] = 9 # This mutates the list labelled by both x and y<br>
+                    &nbsp;&nbsp;&nbsp;print(x)<br>
+                    y = [4, 5, 6]<br>
+                    foo(y) # call foo with y as argument<br>
+                    # Out: [9, 5, 6] # list labelled by x has been mutated<br>
+                    print(y)<br>
+                    # Out: [9, 5, 6] # list labelled by y has been mutated too<br>
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll2-o">
+                    [9, 5, 6] <br>
+                    [9, 5, 6]
+                </div>
+                <h2>Returning values from functions</h2>
+                <span>Functions can return a value that you can use directly:</span>
+                <div class="scroll" id="scroll3">
+                    def give_me_five(): <br>
+                    return 5 <br>
+                    print(give_me_five()) # Print the returned value <br>
+                    # Out: 5 <br><br>
+
+                    #or save the value for later use:<br><br>
+
+                    num = give_me_five() <br>
+                    print(num) # Print the saved returned value <br>
+                    # Out: 5 <br><br>
+
+                    #or use the value for any operations:<br><br>
+
+                    print(give_me_five() + 10)<br>
+                    # Out: 15<br>
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll3-o">
+                    5 <br>
+                    5 <br>
+                    15
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

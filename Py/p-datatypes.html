@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-datatypes.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li> 
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Data Types</h1>
+                <p>Data types are nothing but variables you use to reserve some space in memory. Python variables do not
+                    need an explicit declaration to reserve memory space. The declaration happens automatically when you
+                    assign a value to a variable.</p>
+                <h2>• String Data Type</h2>
+                <p>String are identiﬁed as a contiguous set of characters represented in the quotation marks. Python
+                    allows for either pairs of single or double quotes. Strings are immutable sequence data type, i.e
+                    each time one makes any changes to a string, completely new string object is created.</p>
+                <div class="scroll" id="scroll1">
+                    a_str = 'Hello World' <br> print(a_str) &nbsp;&nbsp;&nbsp;#output will be whole string. Hello World
+                    <br>
+                    print(a_str[0]) &nbsp;&nbsp;&nbsp;#output will be first character. H <br> print(a_str[0:5])
+                    &nbsp;&nbsp;&nbsp;#output will be first five
+                    characters. Hello
+                </div>
+                <h2>• Set Data Types</h2>
+                <p>Sets are unordered collections of unique objects, there are two types of set:</p>
+                <p> <span>1.</span> Sets - They are mutable and new elements can be added once sets are deﬁned</p>
+                <div class="scroll" id="scroll2">
+                    basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'} <br> print(basket)
+                    &nbsp;&nbsp;&nbsp;# duplicates will be removed <br> &gt; {'orange', 'banana', 'pear', 'apple'} <br>
+                    a = set('abracadabra') <br> print(a) &nbsp;&nbsp;&nbsp; # unique letters in a <br>&gt; {'a', 'r',
+                    'b', 'c', 'd'} <br> a.add('z') <br> print(a) <br> &gt; {'a', 'c', 'r', 'b', 'z', 'd'}
+                </div>
+                <span>2.</span>
+                <div class="scroll" id="scroll3">
+                    b = frozenset('asdfagsa') <br> print(b) <br> &gt; frozenset({'f', 'g', 'd', 'a', 's'}) <br> cities =
+                    frozenset(["Frankfurt", "Basel","Freiburg"]) <br> print(cities) <br> &gt; frozenset({'Frankfurt',
+                    'Basel', 'Freiburg'})
+                </div>
+                <h2>• Numbers data type</h2>
+                <p>Numbers have four types in Python. Int, ﬂoat, complex, and long.</p>
+                <div class="scroll" id="scroll4">
+                    int_num = 10 &nbsp&nbsp&nbsp #int value <br> float_num = 10.2 &nbsp&nbsp&nbsp #float value <br>
+                    complex_num = 3.14j &nbsp&nbsp&nbsp #complex value <br> long_num = 1234567L &nbsp&nbsp&nbsp    #long value
+                </div>
+                <h2>•	List Data Type</h2>
+                <p>A list contains items separated by commas and enclosed within square brackets []. lists are almost similar to arrays in C. One diﬀerence is that all the items belonging to a list can be of diﬀerent data type.</p>
+                <p>For example, [2, 6, 8, 3, 1] or ["Python", "Java", "C++"] are both lists. You can notice that it's no different from the list we use in our daily life. A List is just a bunch of numbers or strings that are kept together inside the square bracket, sequentially. Each element of the list can be accessed by using it's index number.</p>
+                <h2>•	Dictionary Data Type</h2>
+                <p>Dictionary consists of key-value pairs. It is enclosed by curly braces {} and values can be assigned and accessed using square brackets[].</p>
+                <h2>•	Tuple Data Type</h2>
+                <p id="last">Lists are enclosed in brackets [ ] and their elements and size can be changed, while tuples are enclosed in parentheses ( ) and cannot be updated. Tuples are immutable.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-numbers.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1> 
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Numbers </h1>
+                <p>Python has basically three numeric data types named as int, float, and complex. Since Python is a
+                    dynamically typed language we don’t have to define the data type, it automatically recognizes the
+                    data type during runtime when we assign the variable.</p>
+                <h2>1. Python int.</h2>
+                <p>In Maths, an integer is a whole number that can be either positive or negative and the number does
+                    not have any fractional value.
+                    Python int is the same and we can create number objects directly by assigning a numeric value to
+                    them.</p>
+                <span>Code: </span>
+                <div class="scroll" id="scroll1">
+                    Num1 = 45 <br>
+                    Num2 = -10 <br>
+                    print( Num1, Num2) <br>
+                    type(Num1) <br>
+                </div>
+                <span>Output:</span>
+                <div class="scroll" id="scroll1-o">
+                    45 -10
+                </div>
+                <div class="Note">
+                    <span>Note:</span> The division operator(‘/’) will convert the number into float. We use (‘//’) to
+                    do integer division.
+                </div>
+                <h2>2. Python float</h2>
+                <p>In floating-point numbers, there is no fixed number of digits before or after the decimal. All the
+                    real numbers that have one decimal can be considered as a float value.</p>
+                <span>Code:</span>
+                <div class="scroll" id="scroll2">
+                    X = 1.0 <br>
+                    Y = 25.125 <br>
+                    Z = - 48.1928569 <br><br>
+
+                    print(X, Y, Z) <br>
+                    type(X)
+                </div>
+                <span>Output:</span>
+                <div class="scroll" id="scroll2-o">
+                    1.0 25.125 -48.1928569 <br>
+                    &lt;class ‘float’ &gt;
+                </div>
+                <h2>3. Python Complex number</h2>
+                <p>Complex numbers are represented in the form of (a+ib), where a is called the real part and b is
+                    called the imaginary part. Python uses j instead of i.</p>
+                <p>Let’s see the representation of a complex number in code.</p>
+                <span>Code:</span>
+                <div class="scroll" id="scroll3">
+                    X = 4+2j <br>
+                    Y = 2-5j <br>
+                    Z = -5j <br><br>
+
+                    print(X) <br>
+                    print(Y) <br>
+                    print(Z) <br><br>
+
+                    type(5-4j)
+                </div>
+                <span>Output:</span>
+                <div class="scroll" id="scroll3-o">
+                    (4+2j) <br>
+                    (2-5j) <br>
+                    (-0-5j) <br>
+                    &lt;class ‘complex’ &gt;
+                </div>
+                <div class="Note">
+                   <span>Note:</span> It is compulsory to define the coefficient of the imaginary part, otherwise, the j will be considered as a variable.
+                </div>
+                <span>Code:</span>
+                <div class="scroll" id="scroll4">
+                    X = 4 + j # NameError: name ‘j’ is not defined <br>
+                    Y = 4 + 1j # Valid complex number
+                </div>
+                <span>Output:</span>
+                <div class="scroll" id="scroll4-o">
+                 <span> NameError: name 'j' is not defined</span>
+                </div>
+                <h3 id="u">
+                    Python Type Conversion
+                </h3>
+                <p>Type conversion is the process of converting data types from one type to another. <br><span>For example,</span> an integer value is converted into a float, or a string is converted into a number.</p>
+                <span>Type conversion can occur in one of the two types –</span> 
+                <div id="uu">
+                <ul>
+                    <li>Implicit Conversion</li>
+                    <li>Explicit Conversion</li>
+                    <img src="p-numbers.jpg" alt="" id="last">
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

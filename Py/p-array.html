@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-array.css"> 
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Array</h1>
+                <h2>What is an Array?</h2>
+                <p>Array is an idea of storing multiple items of the same type together and it makes easier to calculate
+                    the position of each element by simply adding an offset to the base value. A combination of the
+                    arrays could save a lot of time by reducing the overall size of the code. It is used to store
+                    multiple values in single variable.</p>
+                <p>An array is a data structure that stores values of same data type. In Python, this is the main
+                    difference between arrays and lists.While python lists can contain values corresponding to different
+                    data types, arrays in python can only contain values corresponding to same data type. </p>
+                <span>If you have a list of items (a list of bike names, for example), storing the bikes in single
+                    variables could look like this:</span>
+                <p> <span> bike1 = “Interceptor” <br>
+                        bike2 = “Bullet” <br>
+                        bike3 = “Thunderbolt” <br>
+                        bike4 = “Lightning”</span>
+                </p>
+                <span>If you want to loop through bikess and find a specific one, you can use the array.</span>
+                <p>An array can hold many values under a single name, and you can access the values by referring to an
+                    index number.</p>
+                <h2>Array Representation</h2>
+                <p>An array can be declared in various ways and different languages. The important points that should be
+                    considered are as follows:</p>
+                <ul>
+                    <li>Index starts with 0.</li>
+                    <li>We can access each element via its index.</li>
+                    <li>The length of the array defines the capacity to store the elements.</li>
+                </ul>
+                <img src="p-array2.jpg" alt="" id="img1">
+                <h2>Array operations</h2>
+                <span>Some of the basic operations supported by an array are as follows:</span>
+                <ul>
+                    <li> <span>Traverse -</span> It prints all the elements one by one.</li>
+                    <li><span>Insertion -</span> It adds an element at the given index.</li>
+                    <li><span>Deletion -</span> It deletes an element at the given index.</li>
+                    <li><span>Search -</span>Search - It searches an element using the given index or by the value.</li>
+                    <li><span>Update -</span> It updates an element at the given index.</li>
+                </ul>
+                <p>Array is created in Python by importing array module to the python program. Then the array is
+                    declared as shown below :-</p>
+                <div class="scroll" id="scroll1">
+                    from array import * <br> <br>
+                    arrayName = array(typecode, [Initializers])
+                </div>
+                <p>Typecode are the codes that are used to define the type of value the array will hold. Some common
+                    typecodes used are:</p>
+                <img src="p-array1.png" alt="" id="img2">
+                <p>Before lookign at various array operations lets create and print an array using python.The below code
+                    creates an array named array1.</p>
+                <div class="scroll" id="scroll2">
+                    from array import *<br><br>
+
+                    array1 = array('i', [10,20,30,40,50]) <br><br>
+
+                    for x in array1: <br>
+                    print(x) <br>
+
+                </div>
+                <p>When we compile and execute the above program, it produces the following result −</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll2-o">
+                    10<br>
+                    20<br>
+                    30<br>
+                    40<br>
+                    50<br>
+                </div>
+                <h2>Accessing Array Element</h2>
+                <p>We can access each element of an array using the index of the element. The below code shows how</p>
+                <div class="scroll" id="scroll3">
+                    from array import * <br>
+                    array1 = array('i', [10,20,30,40,50]) <br>
+                    print (array1[0]) <br>
+                    print (array1[2]) <br>
+                </div>
+                <p>When we compile and execute the above program, it produces the following result − which shows the
+                    element is inserted at index position 1.</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll3-o">
+                    10<br>
+                    30
+                </div>
+                <h2>Insertion Operation</h2>
+                <p>Insert operation is to insert one or more data elements into an array. Based on the requirement, a
+                    new element can be added at the beginning, end, or any given index of array.</p>
+                <p>Here, we add a data element at the middle of the array using the python in-built insert() method.</p>
+                <div class="scroll" id="scroll4">
+                    from array import * <br>
+                    array1 = array('i', [10,20,30,40,50]) <br>
+                    array1.insert(1,60) <br>
+                    for x in array1: <br>
+                    print(x) <br>
+                </div>
+                <p>When we compile and execute the above program, it produces the following result which shows the
+                    element is inserted at index position 1.</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll4-o">
+                    10<br>
+                    60<br>
+                    20<br>
+                    30<br>
+                    40<br>
+                    50<br>
+                </div>
+                <h2>Deletion Operation</h2>
+                <p>Deletion refers to removing an existing element from the array and re-organizing all elements of an
+                    array.
+                    Here, we remove a data element at the middle of the array using the python in-built remove() method.
+                </p>
+                <div class="scroll" id="scroll5">
+                    from array import *<br>
+                    array1 = array('i', [10,20,30,40,50]) <br>
+                    array1.remove(40) <br>
+                    for x in array1: <br>
+                    print(x) <br>
+                </div>
+                <p>When we compile and execute the above program, it produces the following result which shows the
+                    element is removed form the array.</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll5-o">
+                    10<br>
+                    20<br>
+                    30<br>
+                    50<br>
+                </div>
+                <h2>Search Operation</h2>
+                <p>You can perform a search for an array element based on its value or its index.
+                    Here, we search a data element using the python in-built index() method.
+                </p>
+                <div class="scroll" id="scroll6">
+                    from array import *<br>
+                    array1 = array('i', [10,20,30,40,50]) <br>
+                    print (array1.index(40)) <br>
+                </div>
+                <p>When we compile and execute the above program, it produces the following result which shows the index
+                    of the element. If the value is not present in the array then th eprogram returns an error.</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll6-o">
+                    <span>3 <br></span>
+                </div>
+                <h2>Update Operation</h2>
+                <p>Update operation refers to updating an existing element from the array at a given index.
+                    Here, we simply reassign a new value to the desired index we want to update.
+                </p>
+                <div class="scroll" id="scroll7">
+                    from array import *<br>
+                    array1 = array('i', [10,20,30,40,50]) <br>
+                    array1[2] = 80<br>
+                    for x in array1: <br>
+                    print(x) <br>
+                </div>
+                <p>When we compile and execute the above program, it produces the following result which shows the new
+                    value at the index position 2.</p>
+                <span>Output : </span>
+                <div class="scroll" id="scroll7-o">
+                    10<br>
+                    20<br>
+                    80<br>
+                    40<br>
+                    50<br>
+                </div>
+                <h2>Slicing Python Arrays</h2>
+                <p>We can access a range of items in an array by using the slicing operator :-</p>
+                <div class="scroll" id="scroll8">
+                    import array as arr<br><br>
+                    numbers_list = [2, 5, 62, 5, 42, 52, 48, 5] <br>
+                    numbers_array = arr.array('i', numbers_list) <br><br>
+                    print(numbers_array[2:5]) &nbsp;&nbsp;&nbsp;# 3rd to 5th<br>
+                    print(numbers_array[:-5]) &nbsp;&nbsp;&nbsp;# beginning to 4th<br>
+                    print(numbers_array[5:]) &nbsp;&nbsp;&nbsp;# 6th to end <br>
+                    print(numbers_array[:]) &nbsp;&nbsp;&nbsp;# beginning to end <br>
+                    Run Code
+
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll8-o">
+                    array('i', [62, 5, 42]) <br>
+                    array('i', [2, 5, 62]) <br>
+                    array('i', [52, 48, 5]) <br>
+                    array('i', [2, 5, 62, 5, 42, 52, 48, 5])
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

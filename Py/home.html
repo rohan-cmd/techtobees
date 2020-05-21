@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script> 
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo"> 
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads"> 
+
+            </div>
+        </div> 
+
+        <div id="b2"> 
+
+            <div class="para">
+                <h1 id="h"><span>Introduction to Python</span></h1>
+                <h2>What is Python?</h2>
+                <div id="p1">
+                    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                    Python is maintained by a core development team at Centrum Wiskunde & Informatica (CWI) which is
+                    situated in Netherland, and Guido is still in charge, having been given the title of BDFL
+                    (Benevolent Dictator For Life) by the Python community. The name Python, by the way, derives not
+                    from the snake, but from the British comedy troupe Monty Python’s Flying Circus, of which Guido was,
+                    and presumably still is, a fan.
+                </div>
+                <img src="intro1.png" alt="" id="img1">
+                <div id="p2">
+                    <h2>Features of Python</h2>
+                    <div id="fea">
+                        <span>Readable:</span> Python is a very readable language. <br> <br>
+                        <span> Easy to Learn:</span> Learning python is easy as this is a expressive and high level
+                        programming
+                        language, which means it is easy to understand the language and thus easy to learn. <br> <br>
+                        <span> Large standard library: </span>Python comes with a large standard library that has some
+                        handy codes and
+                        functions which we can use while writing code in Python. <br> <br>
+                        <span> Supports exception handling:</span> If you are new, you may wonder what is an exception?
+                        An exception
+                        is an event that can occur during program exception and can disrupt the normal flow of program.
+                        Python supports exception handling which means we can write less error prone code and can test
+                        various scenarios that can cause an exception later on. <br> <br>
+                        <span> Automatic memory management: </span> Python supports automatic memory management which
+                        means the memory
+                        is cleared and freed automatically. You do not have to bother clearing the memory. <br> <br>
+                        <span> Cross platform:</span> Python is available and can run on various operating systems such
+                        as Mac,
+                        Windows, Linux, Unix etc. This makes it a cross platform and portable language.
+                        Open Source and free: Python is a open source programming language. Python is free to download
+                        and use. This means you can download it for free and use it in your application.
+                    </div>
+                </div>
+
+                <div id="p3">
+                    <h2>Python Syntax compared to other programming languages</h2>
+                    <ul>
+                        <li>Python was designed for readability, and has some similarities to the English language with
+                            influence from mathematics.</li>
+                        <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops,
+                            functions and classes. Other programming languages often use curly-brackets for this
+                            purpose.</li>
+                        <li>Python uses new lines to complete a command, as opposed to other programming languages which
+                            often use semicolons or parentheses.</li>
+                    </ul>
+                </div>
+
+                <div id="p4">
+                    <h2>What can Python do?</h2>
+                    <ul>
+                        <li>Python can be used alongside software to create workflows.</li>
+                        <li>Python can be used to handle big data and perform complex mathematics.</li>
+                        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                        <li>Python can connect to database systems. It can also read and modify files.</li>
+                        <li>Python can be used on a server to create web applications.</li>
+                    </ul>
+                </div>
+
+                <div id="p5">
+                    <h2>What Can You Do with Python?</h2>
+                    <p>You may be wondering what all are the applications of Python. There are so many applications of
+                        python, here are some of them.</p>
+                    <div>
+                        <img src="intro2.jpg" alt="" id="img2">
+                        <span>Web development: </span> Web framework like Django and Flask are based on Python. They
+                        help you write
+                        server side code which helps you manage database, write backend programming logic, mapping urls
+                        etc. <br> <br>
+                        <span> Machine learning:</span> There are many machine learning applications written in Python.
+                        Machine
+                        learning is a way to write a logic so that a machine can learn and solve a particular problem on
+                        its own. For example, products recommendation in websites like Amazon, Flipkart, eBay etc. is a
+                        machine learning algorithm that recognizes user’s interest. Face recognition and Voice
+                        recognition in your phone is another example of machine learning. <br> <br>
+                        <span> Data Analysis:</span> Data analysis and data visualisation in form of charts can also be
+                        developed
+                        using Python. <br> <br>
+                        <span> Scripting:</span> Scripting is writing small programs to automate simple tasks such as
+                        sending
+                        automated response emails etc. Such type of applications can also be written in Python
+                        programming language. <br> <br>
+                        <span> Game Development:</span> You can develop games using Python.
+                        Embedded Applications Development: You can develop Embedded applications in Python. <br> <br>
+                        <span> Desktop applications:</span> You can develop desktop application in Python using library
+                        like TKinter
+                        or QT.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-lists.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script> 
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Lists</h1>
+                <p>List is a collection data type in python. It is ordered and allows duplicate entries as well. Lists
+                    in python need not be homogeneous, which means it can contain different data types like integers,
+                    strings and other collection data types. It is mutable in nature and allows indexing to access the
+                    members in a list</p>
+                <p>To declare a list, we use the square brackets.</p>
+                <p>List is like any other array that we declare in other programming languages. Lists in python are
+                    often used to implement stacks and queues. The lists are mutable in nature. Therefore, the values
+                    can be changed even after a list is declared.</p>
+                <div class="scroll" id="scroll1">
+                    my_list = [16,27,59,77,84,91,96]
+                </div>
+                <span>Indexing : </span> <br>
+                <img src="p-lists1.png" alt="" id="img1">
+                <p>To access a value from a list, we use the index values. Below is the code to get the letter ‘D’ from
+                    the list containing the letters of the word ‘HELLOWORLD’.</p>
+                <div class="scroll" id="scroll2">
+                    a = ['H','E','L','L','O','W','O','R','L','D'] <br>
+                    print(a[9]) <br>
+                    print(a[-1])
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll2-o">
+                    D <br> D
+                </div>
+                <h2>List Operations In Python</h2>
+                <div id="l-m" class="scroll">
+                    <h3>Python List Methods</h3>
+                    <span>append() -</span> Add an element to the end of the list
+                    <hr>
+                    <span>extend() -</span> Add all elements of a list to the another list
+                    <hr>
+                    <span>insert() -</span> Insert an item at the defined index
+                    <hr>
+                    <span>pop() -</span> Removes and returns an element at the given index
+                    <hr>
+                    <span>clear() -</span> Removes all items from the list
+                    <hr>
+                    <span>index() -</span> Returns the index of the first matched item
+                    <hr>
+                    <span>count() -</span> Returns the count of number of items passed as an argument
+                    <hr>
+                    <span>sort() -</span> Sort items in a list in ascending order
+                    <hr>
+                    <span>reverse() -</span> Reverse the order of items in the list
+                    <hr>
+                    <span>copy() -</span> Returns a shallow copy of the list
+                </div>
+                <h2>Creating a List</h2>
+                <p>Lists in Python can be created by just placing the sequence inside the square brackets[]. Unlike
+                    Sets, list doesn’t need a built-in function for creation of list.</p>
+                <div class="scroll" id="scroll3">
+                    # Python program to demonstrate <br>
+                    # Creation of List <br> <br>
+
+                    # Creating a List <br>
+                    List = [] <br>
+                    print("Blank List: ") <br>
+                    print(List) <br><br>
+
+                    # Creating a List of numbers<br>
+                    List = [5, 17, 52]<br>
+                    print("\nList of numbers: ")<br>
+                    print(List)<br><br>
+
+                    # Creating a List of strings and accessing<br>
+                    # using index<br>
+                    List = ["Python", "JavaScript", "PHP"]<br>
+                    print("\nList Items: ")<br>
+                    print(List[0])<br>
+                    print(List[2])<br>
+
+                    # Creating a Multi-Dimensional List<br>
+                    # (By Nesting a list inside a List)<br>
+                    List = [['Python', 'JavaScript'] , ['PHP']]<br>
+                    print("\nMulti-Dimensional List: ")<br>
+                    print(List)
+
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll3-o">
+                    Blank List:<br>
+                    []<br><br>
+
+                    List of numbers:<br>
+                    [5, 17, 52]<br><br>
+
+                    List Items:<br>
+                    Python<br>
+                    PHP<br><br>
+
+                    Multi-Dimensional List:<br>
+                    [['Python', 'JavaScript'], ['PHP']]<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

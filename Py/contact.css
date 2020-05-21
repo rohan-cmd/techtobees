@@ -1,0 +1,350 @@
+/* Common Code */
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+}
+
+/* Navigation Bar */ 
+#nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: black; 
+    height: 80px;
+    width: 100%;
+}
+
+/* Navigation Bar :- Logo */
+#nav-bar #logo{
+    margin: 10px 75px;
+} 
+#nav-bar #logo img{
+    height: 70px;
+}
+/* Navigation Bar :- List(Menu) */
+#nav-bar #menu ul{
+    display: flex;
+    margin-right: 100px;
+    margin-top: 14px;
+}
+#nav-bar #menu ul li{
+    list-style: none;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+#nav-bar #menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+#nav-bar #menu ul li a::after{
+    content: "";
+    /* background-color: white; */
+    background-color: rgb(0, 225, 255);
+    display: block;
+    width: 0;
+    height: 2px;
+    margin:auto;
+    transition: 0.5s;
+}
+#nav-bar #menu ul li a:hover::after, #nav-bar #menu ul li #active::after{
+    width:100%;
+}
+
+/* Body Content  */ 
+/* #body{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+} */
+/* Body :- B1(Topic) */
+#body #b1{
+    margin: 5px 10px 5px 10px;
+    background-color: rgb(75, 255, 255);
+    padding: 10px 10px;
+}
+#topic ul li{
+    font-size: 20px;
+    margin: 5px;
+}
+#body #b1 #ad1{
+    margin-top: 20px;
+}
+/* Body :- B2(Content) */
+#body #b2{
+margin: 5px 10px 5px 0px;
+background-color: rgb(255, 255, 255);
+padding: 10px 10px;
+}
+
+/* Scroll (Programms)*/
+.scroll{
+    border: 2px solid black;
+    margin-left: 20px;
+    width: 700px; 
+    height: 450px; 
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* Ads Container */
+.ads{
+background-color: rgb(75, 255, 255);
+width: 100%;
+}
+
+/* footer */
+#footer{
+    margin-bottom: -20px;
+    background-color: black;
+}
+#footer #icon{
+    text-align: center;
+    margin-top: 20px;
+}
+#footer #icon img{
+    margin-top: 30px;
+    padding: 10px 10px;
+    filter: invert(100%);
+    height:30px;
+}
+#footer #f-p{
+    text-align: center;
+}
+#footer #f-p p{
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+   padding-bottom: 20px;
+}
+
+/* Vertical Menu */
+#bars{
+    display: none;
+}
+#bars img{
+    height: 30px;
+    filter: invert(100%);
+}
+#v-menu{
+    background-color: rgb(0, 250, 250);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    display: none;
+}
+#v-menu ul{
+display: flex;
+flex-direction: column;
+margin-left: -20px;
+margin-right: 60px;
+}
+#v-menu ul li{
+    list-style: none; 
+    margin: 5px 5px 5px 5px;
+}
+#v-menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+#v-menu ul li img{
+    height: 30px;
+}
+
+/* Body Content */
+
+#topic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#c-form form input{
+display: block;
+width: 100%;
+margin: 8px 0px;
+height: 35px;
+border-radius: 20px;
+border: 2px solid rgb(0, 132, 255);
+padding: 0px 10px;
+}
+#c-form h1{
+    text-align: center;
+    background-color: rgb(56, 93, 255);
+}
+#c-form form{
+    margin:2em 2em;
+}
+#c-form form textarea{
+    border: 2px solid rgb(0, 132, 255);
+    border-radius: 20px;
+}
+#c-form{
+    border: 5px solid blue;
+    border-radius: 30px;
+}
+#c-form form label{
+font-size: 1.3em;
+}
+#c-form form .btn{
+    margin: auto;
+border: 2px solid white;
+width: 8em;
+  font-size: 20px;
+  border: white;
+  background-color: black;
+  color: white;
+  margin-top: 1em;
+}
+#or{
+    margin: 2em 2em;
+    border: 5px solid blue;
+    border-radius: 30px;
+}
+#or h1{
+    padding: 0.5em 1em;
+    display: block;
+    margin: auto;
+    width: 2em;
+}
+
+#or div{
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+
+@media (max-width:780px) and (min-width:550px)
+{
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+    #nav-bar #menu ul {
+        margin-right: 0px;
+        margin-right: 15px;
+    }
+    #nav-bar #menu ul li{
+       padding: 13px 5px;
+       margin: 10px 8px;
+   }
+}
+
+@media (max-width:550px) and (min-width:400px)
+{
+    #nav-bar #logo {
+        margin: 0px 25px;
+    }
+    #nav-bar #logo {
+        margin: 0px 32px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 40px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 35px;
+    }
+    #nav-bar {
+        height: 70px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #c-form{
+        width: 90%;
+    }
+    #c-form form textarea{
+        width: 100%;
+    }
+    #or div {
+        padding: 1.5em 1em;
+        font-size: 16px;
+    }
+    #or {
+        margin: 1em 0em;
+    }
+    #footer #icon img {
+        height: 24px;
+    }
+    #footer #f-p p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:400px) and (min-width:240px)
+{
+
+    #nav-bar #logo {
+        margin: 0px 0px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 28px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 32px;
+    }
+    #nav-bar {
+        height: 64px;
+    }
+    #nav-bar #logo img {
+        height: 64px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #c-form{
+        width: 90%;
+        height: 390px;
+    }
+    #c-form form textarea{
+        width: 100%;
+        height: 70px;
+    }
+    #or div {
+        padding: 5px 5px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    #or {
+        margin: 1em 0em;
+    }
+    #footer #icon img {
+        height: 24px;
+    }
+    #footer #f-p p {
+        font-size: 16px;
+    }
+    #c-form form input {
+        height: 28px;
+    }
+    #c-form form label {
+        font-size: 1.2em;
+    }
+    #c-form form .btn {
+        font-size: 15px;
+    }
+}
+
+
+

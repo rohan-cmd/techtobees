@@ -1,0 +1,650 @@
+/* Common Code */
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+} 
+
+/* Navigation Bar */
+#nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: black; 
+    height: 80px;
+    width: 100%;
+}
+
+/* Navigation Bar :- Logo */
+#nav-bar #logo{
+    margin: 10px 75px;
+}
+#nav-bar #logo img{
+    height: 70px;
+}
+/* Navigation Bar :- List(Menu) */
+#nav-bar #menu ul{
+    display: flex;
+    margin-right: 100px;
+    margin-top: 14px;
+}
+#nav-bar #menu ul li{
+    list-style: none;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+#nav-bar #menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+#nav-bar #menu ul li a::after{
+    content: "";
+    /* background-color: white; */
+    background-color: rgb(0, 225, 255);
+    display: block;
+    width: 0;
+    height: 2px;
+    margin:auto;
+    transition: 0.5s;
+}
+#nav-bar #menu ul li a:hover::after, #nav-bar #menu ul li #active::after{
+    width:100%;
+}
+
+/* Body*/ 
+#body{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+}
+/* Body :- B1(Topic) */
+#body #b1{
+    margin: 5px 10px 5px 10px;
+    background-color: rgb(75, 255, 255);
+    padding: 10px 10px;
+}
+#topic ul li{
+    font-size: 20px;
+    margin: 5px;
+}
+#body #b1 #ad1{
+    margin-top: 20px;
+}
+/* Body :- B2(Content) */
+#body #b2{
+margin: 5px 10px 5px 0px;
+background-color: rgb(255, 255, 255);
+padding: 10px 10px;
+}
+/* Scroll (Programms)*/
+.scroll{
+    border: 2px solid black;
+    margin-left: 20px;
+    width: 700px; 
+    height: 450px; 
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+/* Ads Container */
+.ads{
+background-color: rgb(75, 255, 255);
+width: 100%;
+}
+
+/* footer */
+#footer{
+    margin-bottom: -20px;
+    background-color: black;
+}
+#footer #icon{
+    text-align: center;
+    margin-top: 20px;
+}
+#footer #icon img{
+    margin-top: 30px;
+    padding: 10px 10px;
+    filter: invert(100%);
+    height:30px;
+}
+#footer #f-p{
+    text-align: center;
+}
+#footer #f-p p{
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+   padding-bottom: 20px;
+}
+
+/* Vertical Menu */
+#bars{
+    display: none;
+}
+#bars img{
+    height: 30px;
+    filter: invert(100%);
+}
+#v-menu{
+    background-color: rgb(0, 250, 250);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    display: none;
+}
+#v-menu ul{
+display: flex;
+flex-direction: column;
+margin-left: -20px;
+margin-right: 60px;
+}
+#v-menu ul li{
+    list-style: none;
+    margin: 5px 5px 5px 5px;
+}
+#v-menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+#v-menu ul li img{
+    height: 30px;
+}
+ 
+/* Content */
+#b2{
+    font-size: 1.2em;
+}
+#b2 span{
+    font-weight: bold;
+}
+#b2 div{ 
+    margin:30px 25px;
+}
+#b2 h1{
+    text-decoration: underline;
+}
+#img2{
+    height: 22em;
+}
+#last{
+    margin-bottom: 4em;
+}
+#scroll1{
+    height: 75px;
+}
+#scroll2{
+    height: 150px;
+}
+#scroll2-o{
+    height: 125px;
+}
+#scroll3{
+    height: 100px;
+}
+#scroll3-o{
+    height: 50px;
+}
+#scroll4{
+    height: 125px;
+}
+#scroll4-o{
+    height: 135px;
+}
+#scroll5{
+    height: 125px;
+}
+#scroll5-o{
+    height: 100px;
+}
+#scroll6{
+    height: 75px;
+}
+#scroll6-o{
+    height: 25px;
+}
+#scroll7{
+    height: 125px;
+}
+#scroll7-o{
+    height: 125px;
+}
+#scroll8{
+    height: 240px;
+}
+#scroll8-o{
+    height: 100px;
+}
+
+@media (max-width:1110px) and (min-width:980px)
+{
+    .scroll {
+        width: 603px;
+    }
+    #img2 {
+        height: 22em;
+    }
+    #b2 div {
+        margin: 30px 13px;
+    }
+}
+
+@media (max-width:980px) and (min-width:780px)
+{
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 603px;
+    }
+}
+
+@media (max-width:780px) and (min-width:720px)
+{
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 575px;
+    }
+    #img2 {
+        height: 20em;
+    }
+}
+
+@media (max-width:720px) and (min-width:550px)
+{
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 405px;
+    }
+    #img2 {
+        height: 15em;
+    }
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+     #nav-bar #menu ul {
+         margin-right: 0px;
+         margin-right: 15px;
+     }
+     #nav-bar #menu ul li{
+        padding: 13px 5px;
+        margin: 10px 8px;
+    } 
+}
+
+@media (max-width:550px) and (min-width:500px)
+{
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 385px;
+    }
+    #img2 {
+        height: 14em;
+    }
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+    #nav-bar #logo {
+        margin: 0px 32px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 46px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 35px;
+    }
+    #nav-bar {
+        height: 70px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #b2 div {
+        margin: 30px 15px;
+    }
+}
+
+@media (max-width:500px) and (min-width:450px)
+{
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 335px;
+    }
+    #img2 {
+        height: 12em;
+    }
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+    #nav-bar #logo {
+        margin: 0px 32px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 46px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 35px;
+    }
+    #nav-bar {
+        height: 70px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #b2 div {
+        margin: 30px 15px;
+    }
+    #img1{
+        height: 95px;
+    }   
+}
+
+@media (max-width:450px) and (min-width:400px)
+{
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 298px;
+    }
+    #img2 {
+        height: 11em;
+    }
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+    #nav-bar #logo {
+        margin: 0px 32px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 46px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 35px;
+    }
+    #nav-bar {
+        height: 70px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #b2 div {
+        margin: 30px 10px;
+    }
+    #img1{
+        height: 90px;
+    }   
+    #footer #icon img {
+        height: 24px; 
+    }
+    #footer #f-p p {
+        font-size: 16px;
+    }   
+}
+@media (max-width:400px) and (min-width:320px)
+{
+    *{
+        font-size: 16px;
+    }
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 225px;
+    }
+    #img2 {
+        height: 10em;
+    }
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+    #nav-bar #logo {
+        margin: 0px 0px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 30px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 35px;
+    }
+    #nav-bar {
+        height: 70px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #b2 div {
+        margin: 30px 10px;
+    }
+    #img1{
+        height: 67px;
+    }   
+    #footer #icon img {
+        height: 24px; 
+    }
+    #footer #f-p p {
+        font-size: 16px;
+    }   
+    h1,h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:320px) and (min-width:240px)
+{
+    *{
+        font-size: 14px;
+    }
+    #body{
+        display: flex;
+        flex-direction: column;
+    }
+    #body #b1{
+        order: 2;
+     }
+     #body #b2{
+         order: 1;
+         margin: 5px 10px 5px 10px;
+     }
+     #nav-bar #menu ul {
+         margin-right: 66px;
+     }
+     #b1 h1{
+         margin-left: 25px;
+     }
+     .scroll {
+        width: 173px;
+    }
+    #img2 {
+        height: 8em;
+    }
+    #nav-bar #logo {
+        margin: 10px 35px;
+    }
+    #nav-bar #logo {
+        margin: 0px 0px;
+    }
+     #nav-bar #menu ul {
+        display: none;
+     }
+     #bars{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+    }
+    #bars img{
+        margin-top: 18px;
+        height: 30px;
+    }
+    #nav-bar {
+        height: 70px;
+    }
+    #v-menu{
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+    #b2 div {
+        margin: 30px 0px;
+    }
+    #img1{
+        height: 52px;
+    }   
+    #footer #icon img {
+        height: 24px; 
+    }
+    #footer #f-p p {
+        font-size: 16px;
+    }   
+    h1,h2{
+        font-size: 23px;
+    }
+}

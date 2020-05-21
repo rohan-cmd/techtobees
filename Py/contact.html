@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="icon" type="image" href="techtobees.jpg"> 
+</head>
+
+<script>
+function showMenu(){
+document.getElementById('v-menu').style.display = "block";
+}
+function closeMenu(){
+document.getElementById('v-menu').style.display = "none";
+}
+  
+</script>   
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html" id="active">Contact us</a> </li>
+            </ul>
+        </div> 
+    </div> 
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <div id="c-form">
+                    <h1>Contact Us</h1>
+                    <form action="">
+
+                        <label for="name">Name :</label>
+                        <input type="text" id="name">
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email">
+
+                        <label for="comment">Comment :</label> <br>
+                        <textarea id="comment" cols="40" rows="10"></textarea> 
+
+                        <input type="submit" class="btn">
+
+                    </form>
+                </div>
+                <div id="or">
+                    <h1>OR</h1>
+                    <div>
+                        Email us at : techtobees@gmail.com
+                    </div>
+                </div>
+            </div>
+
+           <div id="ad1" class="ads">
+               
+           </div>
+        </div>
+        
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+<div id="v-menu">
+    <ul>
+        <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+        <li> <a href="home.html">Home</a> </li>
+        <li> <a href="tutorials.html">Tutorials</a> </li>
+        <li> <a href="contact.html">Contact us</a> </li>
+    </ul>
+</div>
+
+<!-- <div id="bars">
+    <img src="bars.png" alt="" onclick="showMenu()" id="o">
+</div> -->
+
+</body>
+</html>
+
+
+

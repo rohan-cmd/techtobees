@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-operator.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+ 
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Operators</h1>
+                <p>Operators are used to perform operations on variables and values.</p>
+                <p>Python operators can be classified into the following categories.</p>
+                <ol>
+                    <li>Arithmetic Operators</li>
+                    <li>Logical Operators</li>
+                    <li>Comparison Operators</li>
+                    <li>Bitwise Operators</li>
+                    <li>Assignment Operators</li>
+                    <li>Membership Operators</li>
+                    <li>Identity Operators</li>
+                </ol>
+                <h2>1. Arithmetic Operators</h2>
+                <p>Arithmetic operators usually work on numbers. There are operators for addition, subtraction,
+                    multiplication, division, modulus, and exponential operations. Some of these operators work for
+                    strings too. All the arithmetic operators are special characters.</p>
+                <ul>
+                    <li>+ : addition operator</li>
+                    <li>– : subtraction operator</li>
+                    <li>* : multiplication operator</li>
+                    <li>/ : division operator</li>
+                    <li>** : exponential operator</li>
+                    <li>// : floor division operat</li>
+                </ul>
+                <h2>2. Comparison Operators</h2>
+                <p>Comparison operators are used to compare two values. The result is always a boolean value – True or
+                    False.</p>
+                <span>The list of comparison operators in Python is:</span>
+                <ul>
+                    <li>== : returns True if both the values are equal.</li>
+                    <li>!= : returns True if both the operands are not equal.</li>
+                    <li>> : returns True if the left operand is greater than the right operand.</li>
+                    <li>&lt; : returns True if the left operand is less than the right operand.</li>
+                    <li>>= : returns True if the left value is greater than or equal to the right value.</li>
+                    <li>&lt;= : returns True if the left value is less than or equal to the right value.</li>
+                </ul>
+                <h2>3. Bitwise Operators</h2>
+                <p>They are also called binary operators and they work on integers only. The operand values are
+                    converted to binary and then the operation is perform on every bit. Finally, the value is converted
+                    back to decimal and returned.</p>
+                <span>There are 6 bitwise operators in Python.</span>
+                <ul>
+                    <li>& : Bitwise AND operator</li>
+                    <li>| : Bitwise OR operator</li>
+                    <li>^ : Bitwise XOR operator</li>
+                    <li>~ : Binary ones’ complement operator</li>
+                    <li> &lt;&lt; : Binary left shift operator</li>
+                    <li>>> : Binary right shift operator</li>
+                </ul>
+                <h2>4. Python Logical Operators</h2>
+                <p>There are three logical operators in Python. They work with boolean operands and return a boolean
+                    value. They are made of reserved keywords in Python.</p>
+                <ul>
+                    <li>and : logical AND operator</li>
+                    <li>or : logical OR operator</li>
+                    <li>not : logical NOT operator</li>
+                </ul>
+                <h2>5. Assignment Operators</h2>
+                <p>Assignment operator (=) is used to assign the left operand value to the right operand. </p>
+                <p>There are some <span> compound assignment operators</span> to perform some arithmetic operation
+                    between the two operands and then assign the value to the left operand.</p>
+                <ul>
+                    <li>= : simple assignment operator</li>
+                    <li>+= : adds the two operands and then assign the value to the right operand</li>
+                    <li>-= : subtracts the right operand from the left and then assign the value to the left operand
+                    </li>
+                    <li>*= : multiplies both the operands and then assign to the left</li>
+                    <li>/= : divides left operand from the right operand and then assign the value to the left operand
+                    </li>
+                    <li>%= : modulus of left and right operands and then assigned to the left operand</li>
+                    <li>**= : exponential of left to the right operands and then assignment to the left operand</li>
+                    <li>//= : floor division of the left and right operands and then the value is assigned to the left
+                        operan</li>
+                </ul>
+                <h2>6. Membership Operators</h2>
+                <p>Membership operators are used to checking the presence of a value in a sequence. There are two
+                    membership operators in Python.</p>
+                <ol>
+                    <li>in</li>
+                    <li>not in</li>
+                </ol>
+                <h2>7. Identity Operators</h2>
+                <p>Python identity operators are used to check if two variables point to the same memory location or
+                    not. There are two identity operators.</p>
+                <ol>
+                    <li>is : returns True if both the variables point to the same memory location</li>
+                    <li>is not : returns True if both the variables point to the different memory location.</li>
+                </ol>
+                <h2>Python Operator Overloading</h2>
+                <p>Python supports operator overloading. There are specific methods to overload an operator for an
+                    object.</p>
+                <span>Let’s see what happens when an operator is not supported for a class.</span>
+                <div class="scroll" id="scroll1">
+                    class Data: <br>
+                    id = 0 <br> <br>
+
+                    def __init__(self, i):<br>
+                    self.id = i<br><br>
+
+
+                    d1 = Data(10)<br>
+                    d2 = Data(20)<br><br>
+
+                    d3 = d1 + d2<br>
+                    print(d3.id)
+
+
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll1-o">
+                    Traceback (most recent call last): <br>
+                    File "/Users/pankaj/Documents/PycharmProjects/PythonTutorialPro/hello-world/operators_examples.py",
+                    line 9, in <module><br>
+                    d3 = d1 + d2<br>
+                    TypeError: unsupported operand type(s) for +: 'Data' and 'Data'<br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

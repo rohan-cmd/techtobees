@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-lambda.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+ 
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li>
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+
+        <div id="b2">
+            <div>
+                <h1>Python Lambda</h1>
+                <p>
+                    In Python, anonymous function means that a function is without a name. While normal functions are
+                    defined using the def keyword in Python, anonymous functions are defined using the lambda
+                    keyword.Hence, anonymous functions are also called lambda functions.
+                </p>
+                <span>It has the following syntax:</span>
+                <div class="scroll" id="scroll1">
+                    lambda arguments: expression
+                </div>
+                <ul>
+                    <li>This function can have any number of arguments but only one expression, which is evaluated and
+                        returned.</li>
+                    <li>One is free to use lambda functions wherever function objects are required.</li>
+                    <li>You need to keep in your knowledge that lambda functions are syntactically restricted to a
+                        single expression.</li>
+                    <li>It has various uses in particular fields of programming besides other types of expressions in
+                        functions.</li>
+                </ul>
+                <p>Let’s look at this example and try to understand the <span> difference between a normal def defined
+                        function and lambda function.</span> This is a program that returns the cube of a given value:
+                </p>
+                <div class="scroll" id="scroll2">
+                    # Python code to illustrate cube of a number <br>
+                    # showing difference between def() and lambda().<br>
+                    def cube(y): <br>
+                    return y*y*y; <br><br>
+
+                    g = lambda x: x*x*x <br>
+                    print(g(7)) <br><br>
+
+                    print(cube(5)) <br>
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll2-o">
+                    343 <br>
+                    125
+                </div>
+                <h2>Why Use Lambda Functions?</h2>
+                <p>The power of lambda is better shown when you use them as an anonymous function inside another
+                    function.</p>
+                <h3>Use of Lambda Function in python</h3>
+                <p>We use lambda functions when we require a nameless function for a short period of time.In Python, we
+                    generally use it as an argument to a higher-order function (a function that takes in other functions
+                    as arguments). Lambda functions are used along with built-in functions like filter(), map() etc.</p>
+                <h3>Example use with filter()</h3>
+                <p>The filter() function in Python takes in a function and a list as arguments.
+                    The function is called with all the items in the list and a new list is returned which contains
+                    items for which the function evaluates to True.</p>
+                <p>Here is an example use of filter() function to filter out only even numbers from a list.</p>
+                <div class="scroll" id="scroll3">
+                    # Program to filter out only the even items from a list <br>
+                    my_list = [1, 5, 4, 6, 8, 11, 3, 12] <br><br>
+                    new_list = list(filter(lambda x: (x%2 == 0) , my_list)) <br><br>
+                    print(new_list)
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll3-o">
+                    [4, 6, 8, 12]
+                </div>
+                <h3>Example use with map()</h3>
+                <p>The map() function in Python takes in a function and a list.
+                    The function is called with all the items in the list and a new list is returned which contains
+                    items returned by that function for each item.</p>
+                <p>Here is an example use of map() function to double all the items in a list.</p>
+                <div class="scroll" id="scroll4">
+                    # Program to double each item in a list using map()<br><br>
+                    my_list = [1, 5, 4, 6, 8, 11, 3, 12] <br><br>
+                    new_list = list(map(lambda x: x * 2 , my_list)) <br><br>
+                    print(new_list)
+                </div>
+                <span>Output : </span>
+                <div class="scroll" id="scroll4-o">
+                    [2, 10, 8, 12, 16, 22, 6, 24]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

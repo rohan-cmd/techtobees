@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechtoBees</title>
+    <link rel="stylesheet" href="p-comment.css">
+    <link rel="icon" type="image" href="techtobees.jpg">
+</head>
+
+<script>
+    function showMenu() {
+        document.getElementById('v-menu').style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById('v-menu').style.display = "none";
+    }
+
+</script>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-bar">
+        <div id="logo">
+            <img src="techtobees.jpg" alt="TechtoBees">
+        </div>
+        <div id="bars">
+            <img src="bars.png" alt="" onclick="showMenu()">
+        </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="home.html" id="active">Home</a> </li>
+                <li> <a href="tutorials.html">Tutorials</a> </li>
+                <li> <a href="contact.html">Contact us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="body">
+        <div id="b1">
+            <div id="topic">
+                <h1>Python Basics</h1>
+                <ul>
+                    <li><a href="home.html">Python Introduction</a></li>
+                    <li><a href="p-install.html">Python Install</a></li>
+                    <li><a href="p-comment.html">Python Comments</a></li> 
+                    <li><a href="p-varibles.html">Python Variables</a></li>
+                    <li><a href="p-datatypes.html">Python Datatypes</a></li>
+                    <li><a href="p-numbers.html">Python Numbers</a></li>
+                    <li><a href="p-if-Else.html">Python If...Else</a></li>
+                    <li><a href="p-forloop.html">Python For Loop</a></li>
+                    <li><a href="p-whileloop.html">Python While Loop</a></li>
+                    <li><a href="p-function.html">Python Functions</a></li>
+                    <li><a href="p-array.html">Python Arrays</a></li>
+                    <li><a href="p-classes&objects.html">Python Classes/Objects</a></li>
+                    <li><a href="p-operator.html">Python Operators</a></li>
+                    <li><a href="p-lists.html">Python Lists</a></li> 
+                    <li><a href="p-tuple.html">Python Tuples</a></li>
+                    <li><a href="p-string.html">Python Strings</a></li>
+                    <li><a href="p-boolean.html">Python Booleans</a></li>
+                    <li><a href="p-sets.html">Python Sets</a></li>
+                    <li><a href="p-lambda.html">Python Lambda</a></li>
+                    <li><a href="p-inheritance.html">Python Inheritance</a></li>
+                </ul>
+            </div>
+            <div id="ad1" class="ads">
+
+            </div>
+        </div>
+        <div id="b2">
+            <div id="c1">
+                <h1>Python Comment</h1>
+                <p>As programs get bigger and more complicated, they get more diﬃcult to read. Formal languages are
+                    dense, and it is often diﬃcult to look at a piece of code and ﬁgure out what it is doing, or why.
+                    For this reason, it is a good idea to add notes to your programs to explain in natural language what
+                    the program is doing. These notes are called comments, and in Python they start with the # symbol:
+                </p>
+            </div>
+            <div id="c2">
+                <h2>There are three types of ways of writing comment in Python.</h2>
+                <span>1) Single Line Comment</span>
+                <div class="scroll" id="scroll1">
+                    <span> # compute the percentage of the hour that has elapsed</span> <br> <br>
+                    percentage = (minute * 100) / 60
+                </div>
+                <p>In this case, the comment appears on a line by itself. You can also put comments at the end of a
+                    line:</p>
+                <span>2) In-line Comment</span>
+                <div class="scroll" id="scroll2">
+                    percentage = (minute * 100) / 60 &nbsp;&nbsp;&nbsp;&nbsp;<span># percentage of an hour</span>
+                </div>
+                <p>Python ignores comments, and so will not execute code in there, or raise syntax errors for plain
+                    English sentences.</p>
+                <span>3) Multiple line Comment</span>
+                <p>Comments spanning multiple lines have &nbsp;""" or ''' &nbsp;on either end. This is the same as a
+                    multiline string, but they can be used as comments:</p>
+                <div class="scroll" id="scroll3">
+                    """ This type of comment spans multiple lines. <br> These are mostly used for documentation <br> of
+                    functions, classes and modules. """
+                </div>
+            </div>
+            <div id="c3">
+                <h2>Programmatically accessing docstrings :-</h2>
+                <p>Docstrings are - unlike regular comments - stored as an attribute of the function they document,
+                    meaning that you can access them programmatically.</p>
+                <span>An example function </span>
+                <div class="scroll" id="scroll4">
+                    def func(): <br> <br>"""This is a function that does nothing at all"""<br> <br>return <br><br>
+                    The docstring can be accessed using the __doc__ attribute: <br><br>
+                    print(func.__doc__)
+                </div>
+                <span>Write documentation using docstrings :-</span>
+                <p>A docstring is a multi-line comment used to document modules, classes, functions and methods. It has
+                    to be the ﬁrst statement of the component it describes.</p>
+                <div class="scroll" id="scroll5">
+                    def hello(name): """Greet someone. <br> <br>
+                    Print a greeting ("Hello") for the person with the given name. """ <br><br>
+                    print("Hello " + name)<br><br>
+                    class Greeter: """An object used to greet people. <br><br>
+                    It contains multiple greeting functions for several languages and times of the day. """
+                </div>
+                <p id="last">The value of the docstring can be accessed within the program and is - for example - used by the help command.</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="ad2" class="ads">
+
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="icon">
+            <img src="instagram.png" alt="" id="i-1">
+            <img src="facebook.png" alt="" id="i-2">
+            <img src="twitter.png" alt="" id="i-3">
+        </div>
+        <div id="f-p">
+            <p>Copyright &copy; All rights reserved.</p>
+        </div>
+    </div>
+    <div id="v-menu">
+        <ul>
+            <li><img src="close.png" alt="" onclick="closeMenu()"></li>
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="tutorials.html">Tutorials</a> </li>
+            <li> <a href="contact.html">Contact us</a> </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
